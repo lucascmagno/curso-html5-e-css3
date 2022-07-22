@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+*{ /*configurações blobais das CSS*/
+    height: 100%;
+}
+
+body{
+    background-image: radial-gradient(circle, #85EADE 35%, #30B3A3 ,#3A6661);
+}

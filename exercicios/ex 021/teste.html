@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        div{
+            text-align: center;
+            font: 1.5em bolder Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            padding: 10px;
+            border: 5px solid darkgray;
+            outline: 5px;
+            margin: 5px auto 5px auto;
+            height: 150px;
+            width: 150px;
+
+            box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.445);
+            border-radius: 20px 5px;
+        }
+        #d1:hover{
+            color: aliceblue;
+            background-color: rgba(0, 128, 114, 0.3);
+            height: 175px;
+            width: 175px;
+        }
+        div > .p1{
+            display: none;
+            
+        }
+        div:hover > .p1{
+            display: block;
+            font: 1em bolder Arial, Verdana, serif;
+            border: 3px solid;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px gray;
+        }
+
+        div:hover > #p0{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <p id="p0">Passe o mouse aqui</p>
+        <p class="p1">Olá, mundo!</p>
+    </div>
+</body>
+</html>
