@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body{
+    background: darkblue url('../imagens/espaco.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+div#imagem{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
