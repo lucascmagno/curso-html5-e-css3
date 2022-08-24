@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             font-size: 1.5em;
@@ -25,10 +26,21 @@
             border: 1px solid black;
             padding: 10px;
         }
+        tbody > tr:nth-child(2n){
+            /*
+                2n pula 2 linhas
+                old = impar
+                even = par
+            */
+            background-color: lightgrey;
+        }
+
         thead, tfoot{
             background-color: grey;
             color: white;
         }
+        thead > tr >
+
         td.num{
             text-align: right;
         }
@@ -66,6 +78,10 @@
             <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">18 928 477</td>
             </tr>
         </tbody>
         <tfoot>
