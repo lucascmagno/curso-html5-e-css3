@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption{
+            font-size: 1em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque{
+            background-color: grey;
+        }
+
+        .cnome{
+            background-color: antiquewhite;
+        }
+        .csexo, .cidade{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo"> <!-- span="n" n ->número de colunas-->
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalística</td>
+        </tr>
+        <tr>
+            <td>Julia Baskville</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Médica veterinária</td>
+        </tr>
+        <tr  class="destaque">
+            <td>Pedro Mendes</td>
+            <td>M</td>
+            <td>33</td>
+            <td>Mecânico</td>
+        </tr>
+        <tr>
+            <td>Ana Maria Furtado</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Confeiteira</td>
+        </tr>
+        <tr class="destaque">
+            <td>Paulo José</td>
+            <td>M</td>
+            <td>47</td>
+            <td>Construtor Naval</td>
+        </tr>
+        <tr>
+            <td>Thiago Silva</td>
+            <td>M</td>
+            <td>20</td>
+            <td>Atendente</td>
+        </tr>
+        <tr>
+            <td>Beatriz alves</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalística</td>
+        </tr>
+    </table>
+</body>
+</html>
