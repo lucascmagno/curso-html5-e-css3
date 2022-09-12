@@ -1,6 +1,10 @@
 inputs:
 submit - submeter
 reset - limpar
+Number - numéricos
+Month - mês
+date- data
+time - tempo, hora
 
 Parâmetros:
 required - Requerido, obrigatório
@@ -10,3 +14,7 @@ size - tamanho
 placeholder - colocar coisas dentro da caixa
 autocomplete - autocompleta 
 	ex: username - nome de usuários, current-password - senhas salvas
+step - passa de n em n (n - número definido por vc)
+min - valor mínimo que pode ser inserido (numérico) 
+max - valor máximo que pode ser inserido (numérico)
+Value - valor que preenche previamente
