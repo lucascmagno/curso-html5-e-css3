@@ -1,0 +1,12 @@
+inputs:
+submit - submeter
+reset - limpar
+
+Parâmetros:
+required - Requerido, obrigatório
+minlength - tamanho mínimo de letras
+maxlength - tamanho máximo de letras
+size - tamanho
+placeholder - colocar coisas dentro da caixa
+autocomplete - autocompleta 
+	ex: username - nome de usuários, current-password - senhas salvas
