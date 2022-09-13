@@ -6,6 +6,11 @@ Month - mês
 date- data
 time - tempo, hora
 
+tags: 
+fieldset - cria uma caixa contendo todos os campos
+legend - acrescenta na legenda do formulário  
+
+
 Parâmetros:
 required - Requerido, obrigatório
 minlength - tamanho mínimo de letras
@@ -18,3 +23,4 @@ step - passa de n em n (n - número definido por vc)
 min - valor mínimo que pode ser inserido (numérico) 
 max - valor máximo que pode ser inserido (numérico)
 Value - valor que preenche previamente
+pattern -> faz a validacao do campo 
