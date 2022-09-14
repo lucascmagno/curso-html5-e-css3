@@ -5,6 +5,9 @@ Number - numéricos
 Month - mês
 date- data
 time - tempo, hora
+color - cor
+range - nivel
+file - arquivo
 
 tags: 
 fieldset - cria uma caixa contendo todos os campos
