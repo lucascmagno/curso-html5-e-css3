@@ -9,9 +9,16 @@ color - cor
 range - nivel
 file - arquivo
 
+
 tags: 
 fieldset - cria uma caixa contendo todos os campos
 legend - acrescenta na legenda do formulário  
+select - Botão de seleção
+option - Opção do Botão de seleção
+optgroup - grupo de opções
+datalist - lista de dados
+textarea - Area de texto
+
 
 
 Parâmetros:
@@ -27,3 +34,6 @@ min - valor mínimo que pode ser inserido (numérico)
 max - valor máximo que pode ser inserido (numérico)
 Value - valor que preenche previamente
 pattern -> faz a validacao do campo 
+selected - seleciona um option
+for - para onde
+list - implementa a lista de sugestao
