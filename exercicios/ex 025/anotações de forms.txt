@@ -5,6 +5,8 @@ Number - numéricos
 Month - mês
 date- data
 time - tempo, hora
+radio - item para marcar
+checkbox - caixa de checagem
 color - cor
 range - nivel
 file - arquivo
