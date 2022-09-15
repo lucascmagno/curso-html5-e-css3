@@ -11,6 +11,8 @@ color - cor
 range - nivel
 file - arquivo
 
+Outputs:
+output - oniput
 
 tags: 
 fieldset - cria uma caixa contendo todos os campos
