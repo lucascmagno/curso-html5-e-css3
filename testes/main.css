@@ -9,6 +9,22 @@
     --cor2: #D0E2F4;
     --cor3: #1abc9c;
 }
+/*.hamburger{
+    margin-left: 50px;
+    top: 50%;
+    border: 1px solid green;
+    width: 30px;
+}
+.hamburger:nth-child(1){
+    border: 1px solid white;
+}
+.hamburger:nth-child(2){
+    border: 1px solid white;
+}
+.hamburger:nth-child(3){
+    border: 1px solid white;
+}
+*/
 nav{
     margin: 2px auto 0;
 
@@ -92,5 +108,11 @@ body{
 }
 span{
     color: #3BD6B4;
+}
+
+section{
+    width: 50px;
+    height: 50px;
+    background-color: white;
 }
 
