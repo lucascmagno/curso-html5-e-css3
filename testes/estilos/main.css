@@ -114,3 +114,67 @@ nav .start-home, a:nth-child(5):hover~.animation{
 span{
     color: #3BD6B4;
 }
+
+.section1{
+    position: absolute;
+    width: 80vw;
+    height: 400px;
+    background-color: #192e427c;
+    top: 325px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: white;
+
+    line-height: 2em;
+    font-size: 1.2em;
+
+    background: linear-gradient(to right, #192e427c, transparent);
+}
+.section1 h1{
+    color: red;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 32px;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+}
+
+.section1 p{
+    position: absolute;
+    width: 400px;
+    text-align: right;
+    text-shadow: 1px 1px 1px black;
+}
+
+.section2{
+    position: absolute;
+    width: 80vw;
+    height: 400px;
+    background-color: #192e427c;
+    top: 800px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: white;
+
+    line-height: 2em;
+    font-size: 1.2em;
+
+    background: linear-gradient(to right, #192e427c, transparent);
+}
+section h1{
+    color: red;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 32px;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+}
+
+section p{
+    position: absolute;
+    width: 400px;
+    text-align: right;
+    text-shadow: 1px 1px 1px black;
+}

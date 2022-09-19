@@ -38,7 +38,7 @@ a img:hover{
 
     background: linear-gradient(to right, #192e427c, transparent);
 }
-.section1 h1{
+section h1{
     color: red;
     font-size: 1.8em;
     text-align: center;
@@ -47,7 +47,7 @@ a img:hover{
     text-transform: uppercase;
 }
 
-.section1 p{
+section p{
     position: absolute;
     width: 400px;
     text-align: right;
