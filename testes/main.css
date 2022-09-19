@@ -1,12 +1,21 @@
 @charset "UTF-8";
+*{
+    margin: 0;
+    outline: 0;
+}
 
+:root{
+    --cor1: #34495e;
+    --cor2: #D0E2F4;
+    --cor3: #1abc9c;
+}
 nav{
     margin: 2px auto 0;
 
     position: relative;
     width: 590px;
     height: 50px;
-    background-color: #34495e;
+    background-color: var(--cor1);
     border-radius: 8px;
     font-size: 0;
 }
@@ -25,7 +34,7 @@ nav a{
     cursor: pointer;
 }
 nav a:hover{
-    color: #1abc9c;
+    color: var(--cor3);
 }
 
 nav.animation{
