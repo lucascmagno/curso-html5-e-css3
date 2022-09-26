@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 40vw;
+            height: 40vh;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        h1{
+            position: absolute;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bolder;
+            box-sizing: border-box;
+            border: 30px solid black;
+        }
+
+        input{
+            width: 200px;
+        }
+        label{
+            height: 400px;
+        }
+
+
+        @media screen and (max-width: 700px){
+           
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="get">
+        <fieldset>
+            <h1>Login</h1>
+            <label for="iemail">E mail: </label>
+            <input type="email" id="iemail">
+            
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome">
+        </fieldset>
+    </form>
+</body>
+</html>
