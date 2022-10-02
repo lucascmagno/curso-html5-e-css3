@@ -1,7 +1,7 @@
 var taskInput = document.getElementById("new-task");
 var addButton = document.getElementsByTagName("button")[0];
 var incompleteTaskHolder = document.getElementById("incomplete-tasks");
-var taskCompleted = document.getElementById("completed-tasks")
+var completedTaskHolder = document.getElementById("completed-tasks")
 
 var createNewTaskElement = function(taskString){
     var listItem = document.createElement("li");
@@ -31,6 +31,7 @@ var createNewTaskElement = function(taskString){
     listItem.appendChild(editInput);
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
+    return listItem;
 }
     //adiciona uma nova tarefa
 var addTask = function(){
@@ -51,7 +52,7 @@ var editTask = function(){
     var containsClass = listItem.classList.contains("editMode");
 
     if (containsClass) {
-        label.innerHTML = editInput.value;
+        label.innerText = editInput.value;
     }
     else{
         editInput.value = label.innerText;
