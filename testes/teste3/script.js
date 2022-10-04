@@ -60,4 +60,3 @@ var editTask = function(){
     }
     listItem.classList.toggle("editMode");
 }
-
