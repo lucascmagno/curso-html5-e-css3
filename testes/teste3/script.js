@@ -1,7 +1,7 @@
 var taskInput = document.getElementById("new-task");
 var addButton = document.getElementsByTagName("button")[0];
-var incompleteTaskHolder = document.getElementById("incomplete-tasks");
-var completedTaskHolder = document.getElementById("completed-tasks")
+var incompleteTasksHolder = document.getElementById("incomplete-tasks");
+var completedTasksHolder = document.getElementById("completed-tasks")
 
 var createNewTaskElement = function(taskString){
     var listItem = document.createElement("li");
@@ -21,7 +21,7 @@ var createNewTaskElement = function(taskString){
 
     editButton.innerText = "Editar";
     editButton.className = "edit";
-    deleteButton.innerText = "Deletar";
+    deleteButton.innerText = "Delete";
     deleteButton.className = "delete";
 
     label.innerText = taskString;
@@ -39,9 +39,10 @@ var addTask = function(){
     //cria uma nova lista
     var listItem = createNewTaskElement(taskInput.value);
 
-    incompleteTaskHolder.appendChild(listItem);
+    incompleteTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
     taskInput.value = "";
+    
 }
 
 var editTask = function(){
@@ -59,3 +60,4 @@ var editTask = function(){
     }
     listItem.classList.toggle("editMode");
 }
+
