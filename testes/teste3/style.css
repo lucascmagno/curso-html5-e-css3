@@ -126,6 +126,10 @@ li > .delete:hover{
     color: #888;
 }
 
+#incomplete-tasks{
+    padding-top: 100px;
+}
+
 ul li input[type="text"]{
     display: none;
 }

@@ -37,6 +37,7 @@ var createNewTaskElement = function(taskString){
 var addTask = function(){
     console.log("Add task...");
     //cria uma nova lista
+    incompleteTasksHolder.style.paddingTop = '0';
     var listItem = createNewTaskElement(taskInput.value);
 
     incompleteTasksHolder.appendChild(listItem);
