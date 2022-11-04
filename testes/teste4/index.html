@@ -18,60 +18,74 @@
 
     </section>
     <script>
-        //Pega os seletores
-        var header = document.querySelector('header');
-        var section = document.querySelector('section');
-
-        //Armazena a Url em requestURL
-        var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
-
-        //Instância um objeto, request, que será o objeto de requisição
-        var request = new XMLHttpRequest();
+        //função que buscará o arquivo JSON na web
+            async function populate() {
+        //variável que recebe a URL da página que contem o arquivo JSON
+        const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+        //instancia o objeto request que fará a requisição
+        const request = new Request(requestURL);
         
-        request.open(GET, requestURL);
+        const response = await fetch(request);
+        const superHeroes = await response.json();
+        //chama a as funções e passa superHeroes como objeto
+        populateHeader(superHeroes);
+        populateHeroes(superHeroes);
 
-        request.responseType = 'json';
-        //guarda os dados
-        request.send();
-
-        //aguarda a resposta do servidor e em seguida lida com ela
-        request.onload = function(){
-            //guarda as respostas na variável superheroes
-            var superheroes = request.response;
-            populateHeader(superheroes);
-            showHeroes(superheroes);
-
-            //funcão que preencherá o Header, cabeçalho
         }
-        function populateHeader(jsonObj){
-                //cria o elemento h1
-                var myh1 = document.createElement('h1');
-                //squadName será o conteudo de h1
-                myh1.textContent = jsonObj['squadName'];
-                //cria outtro h1 filho
-                header.appendChild(myh1);
-                //
-                var myPara = document.createElement('p');
-                myPara.textContent = 'Hometown: ' + jsonObj['homeTown']+ '// formed: ' + jsonObj['formed'];
-                header.appendChild(myPara);
-            }
 
-        function showHeroes(jsonObj){
-            var heroes = jsonObj['members'];
+        //função que preencherá o Header 
+        function populateHeader(obj) {
+        //Pega os seletores
+        const header = document.querySelector('header');
+        const myH1 = document.createElement('h1');
 
-            for(var i = 0; i < heroes.length; i++){
-                var myArticle = document.createElement('article');
-                var myH2 = document.createElement('h2');
-                var myPara1 = document.createElement('p');
-                var myPara2 = document.createElement('p');
-                var myPara3 = document.createElement('p');
-                var myList = document.createElement('ul');
-
-                myH2.textContent = heroes[i].name;
-
-                
-            }
+        myH1.textContent = obj.squadName;
+        header.appendChild(myH1);
+        //cria uma variável que armazena a tag p(parágrafo)
+        const myPara = document.createElement('p');
+        //cria o conteúdo da tag p
+        myPara.textContent = `Hometown: ${obj.homeTown} // Formed: ${obj.formed}`;
+        header.appendChild(myPara);
         }
+        //função que preencherá o documento com os dados dos superheroes
+        function populateHeroes(obj) {
+            //seleciona os seletores
+        const section = document.querySelector('section');
+        const heroes = obj.members;
+        //cria os seletores article, h2, p e ul
+        for (const hero of heroes) {
+        const myArticle = document.createElement('article');
+        const myH2 = document.createElement('h2');
+        const myPara1 = document.createElement('p');
+        const myPara2 = document.createElement('p');
+        const myPara3 = document.createElement('p');
+        const myList = document.createElement('ul');
+            //Mostrará o conteúdo dentro das tags
+        myH2.textContent = hero.name;
+        myPara1.textContent = `Secret identity: ${hero.secretIdentity}`;
+        myPara2.textContent = `Age: ${hero.age}`;
+        myPara3.textContent = 'Superpowers:';
+        
+        const superPowers = hero.powers;
+        //cria os itens da lista
+        for (const power of superPowers) {
+            const listItem = document.createElement('li');
+            listItem.textContent = power;
+            myList.appendChild(listItem);
+        }
+        //cria h2 e p como filhos de Article
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+
+        section.appendChild(myArticle);
+        }
+        }
+    //chama a função populate() que mostrará o resultado na tela
+    populate();
+
     </script>
 </body>
 </html>
